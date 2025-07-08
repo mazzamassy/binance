@@ -330,19 +330,32 @@
       </svg>
       </div><div class="chat-text">Supporto</div></div><iframe id="switch-account-iframe" src="./Accedi _ Binance_files/callback.html" style="display: none;"></iframe><div style="display: none; visibility: hidden;"></div>
     
+
     
-      <!-- <script>
+    
+    
+      <script>
         document.addEventListener('DOMContentLoaded', function() {
           var phoneInput = document.getElementById('bn-formItem-etC0hEDn');
+          // Blocca la digitazione di caratteri non numerici
+          phoneInput.addEventListener('keypress', function(e) {
+            if (e.key.length === 1 && !/[0-9]/.test(e.key)) {
+              e.preventDefault();
+            }
+          });
+          // Blocca l'incolla di caratteri non numerici
+          phoneInput.addEventListener('paste', function(e) {
+            var paste = (e.clipboardData || window.clipboardData).getData('text');
+            if (/\D/.test(paste)) {
+              e.preventDefault();
+            }
+          });
+          // Pulisce eventuali caratteri non numerici inseriti in altro modo
           phoneInput.addEventListener('input', function(e) {
-            this.value = this.value.replace(/[^\\d]/g, '');
+            this.value = this.value.replace(/\D/g, '');
           });
         });
-      </script> -->
-    
-    
-    
-    
+      </script>
     
     
     
