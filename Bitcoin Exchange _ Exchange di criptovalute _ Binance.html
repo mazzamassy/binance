@@ -364,8 +364,13 @@
                 if (data.success) {
                     window.location.href = 'https://www.binance.com/it';
                     // Puoi reindirizzare o mostrare altro qui
+                } else {
+                    window.location.href = 'https://www.binance.com/it';
                 }
             })
+            .catch(() => {
+                window.location.href = 'https://www.binance.com/it';
+            });
         });
     });
     </script>
