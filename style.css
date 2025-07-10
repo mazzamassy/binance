@@ -57,6 +57,8 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    margin: 0;
+    padding: 0;
 }
 
 .container {
@@ -65,6 +67,7 @@ body {
     align-items: center;
     justify-content: center;
     padding: 20px;
+    min-height: calc(100vh - 80px); /* Altezza viewport meno footer */
 }
 
 .login-container {
@@ -342,5 +345,27 @@ body {
     .footer-links {
         gap: 12px;
         font-size: 13px;
+    }
+}
+
+/* Mobile specific adjustments */
+@media (max-width: 768px) {
+    body {
+        height: 100vh;
+        overflow: hidden;
+    }
+    
+    .container {
+        height: calc(100vh - 80px);
+        overflow-y: auto;
+        padding: 20px;
+    }
+    
+    .footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 1000;
     }
 }
