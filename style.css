@@ -60,7 +60,7 @@ body {
 }
 
 .container {
-    flex: 1;
+    flex: 1 0 auto;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -253,6 +253,7 @@ body {
 .footer {
     padding: 24px 20px;
     background-color: #181A20;
+    margin-top: auto;
 }
 
 .footer-content {
