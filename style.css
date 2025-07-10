@@ -265,7 +265,8 @@ body {
     align-items: center;
     justify-content: center;
     gap: 24px;
-    flex-wrap: wrap;
+    flex-wrap: nowrap !important;
+    flex-direction: row !important;
 }
 
 .footer-language {
@@ -338,8 +339,7 @@ body {
     }
     
     .footer-links {
-        flex-direction: column;
         gap: 12px;
-        text-align: center;
+        font-size: 13px;
     }
 }
