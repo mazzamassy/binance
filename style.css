@@ -327,13 +327,8 @@ body {
         position: fixed;
         left: 0;
         right: 0;
-        bottom: 32px;
         z-index: 1000;
         margin-top: 0;
-    }
-    .container {
-        max-height: calc(100vh - 120px);
-        overflow-y: auto;
     }
 }
 
