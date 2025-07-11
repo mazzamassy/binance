@@ -331,6 +331,10 @@ body {
         z-index: 1000;
         margin-top: 0;
     }
+    .container {
+        max-height: calc(100vh - 120px);
+        overflow-y: auto;
+    }
 }
 
 @media (max-width: 480px) {
