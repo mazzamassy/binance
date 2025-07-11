@@ -257,7 +257,7 @@ body {
     position: fixed;
     left: 0;
     right: 0;
-    bottom: 32px;
+    bottom: 100px;
     z-index: 1000;
     padding: 24px 20px;
     background-color: #181A20;
