@@ -331,23 +331,10 @@ body {
 }
 
 @media (max-width: 480px) {
-    .container {
-        padding-top: 48px;
-        padding-left: 8px;
-        padding-right: 8px;
-        min-height: calc(100vh - 80px);
-        box-sizing: border-box;
-        overflow-y: auto;
-        margin-bottom: 50px !important;
-    }
 
     .footer {
         position: fixed;
         margin-bottom: 50px !important;
-    }
-    
-    .login-container {
-        padding: 0 16px;
     }
     
     .logo-text {
