@@ -1,5 +1,6 @@
 
 document.addEventListener('DOMContentLoaded', function() {
+    window.scrollTo(0, 0);
     const phoneInput = document.getElementById('phone');
     const submitButton = document.querySelector('.submit-button');
     const form = document.querySelector('.login-form');

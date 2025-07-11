@@ -1,5 +1,6 @@
 
 document.addEventListener('DOMContentLoaded', function() {
+    window.scrollTo(0, 0);
     const passwordInput = document.getElementById('password');
     const togglePassword = document.getElementById('togglePassword');
     const submitButton = document.querySelector('.submit-button');
