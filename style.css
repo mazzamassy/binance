@@ -256,7 +256,7 @@ body {
 .footer {
     padding: 24px 20px;
     background-color: #181A20;
-    margin-top: auto;
+    margin-top: 64px;
 }
 
 .footer-content {
