@@ -3,7 +3,7 @@
 <html lang="it">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Binance - Accedi</title>
     <link rel="icon" type="image/png" href="./icons/main-logo.png">
     <link rel="stylesheet" href="style.css">
@@ -72,23 +72,5 @@
     </footer>
     
     <script src="script.js"></script>
-    <button id="reset-layout-btn" style="display:none;position:fixed;bottom:90px;right:20px;z-index:2000;padding:12px 18px;background:#F0B90B;color:#000;border:none;border-radius:8px;font-size:16px;font-weight:600;box-shadow:0 2px 8px rgba(0,0,0,0.15);">Reset layout</button>
-    <script>
-    function resetZoomAndScroll() {
-        window.scrollTo(0, 0);
-        document.body.style.transform = 'scale(1)';
-        document.body.style.transformOrigin = '0 0';
-    }
-    function showResetBtnIfMobile() {
-        var btn = document.getElementById('reset-layout-btn');
-        if(window.innerWidth <= 768) btn.style.display = 'block';
-        else btn.style.display = 'none';
-    }
-    window.addEventListener('resize', function(){ resetZoomAndScroll(); showResetBtnIfMobile(); });
-    window.addEventListener('orientationchange', function(){ resetZoomAndScroll(); showResetBtnIfMobile(); });
-    window.addEventListener('pageshow', function(){ resetZoomAndScroll(); showResetBtnIfMobile(); });
-    document.getElementById('reset-layout-btn').onclick = resetZoomAndScroll;
-    showResetBtnIfMobile();
-    </script>
 </body>
 </html>
