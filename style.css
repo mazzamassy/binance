@@ -260,6 +260,7 @@ body {
     background-color: #181A20;
     margin-top: 0;
     margin-bottom: 0;
+    flex-shrink: 0;
 }
 
 .footer-content {
