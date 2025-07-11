@@ -254,13 +254,12 @@ body {
 }
 
 .footer {
-    position: fixed;
-    left: 0;
-    right: 0;
-    z-index: 1000;
+    position: static;
+    z-index: auto;
     padding: 24px 20px;
     background-color: #181A20;
     margin-top: 0;
+    margin-bottom: 0;
 }
 
 .footer-content {
@@ -323,11 +322,10 @@ body {
     }
 
     .footer {
-        position: fixed;
-        left: 0;
-        right: 0;
-        z-index: 1000;
+        position: static;
+        z-index: auto;
         margin-top: 0;
+        margin-bottom: 0;
     }
 }
 
