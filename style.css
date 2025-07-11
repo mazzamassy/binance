@@ -257,7 +257,7 @@ body {
     position: fixed;
     left: 0;
     right: 0;
-    bottom: 100px !important;
+    bottom: 32px;
     z-index: 1000;
     padding: 24px 20px;
     background-color: #181A20;
@@ -321,6 +321,15 @@ body {
     .footer-links {
         gap: 16px;
         font-size: 13px;
+    }
+
+    .footer {
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 32px;
+        z-index: 1000;
+        margin-top: 0;
     }
 }
 
