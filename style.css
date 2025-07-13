@@ -306,6 +306,7 @@ body {
         align-items: flex-start;
         justify-content: flex-start;
         padding-top: 20px;
+        min-height: auto;
     }
     
     .login-container {
@@ -338,6 +339,7 @@ body {
         box-sizing: border-box;
         overflow-y: auto;
         justify-content: flex-start;
+        min-height: auto;
     }
 
     .footer {
@@ -381,6 +383,7 @@ body {
         padding: 20px 12px;
         justify-content: flex-start;
         align-items: flex-start;
+        min-height: auto;
     }
     
     .footer {
