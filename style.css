@@ -67,7 +67,7 @@ body {
     align-items: center;
     justify-content: center;
     padding: 20px;
-    min-height: calc(100vh - 80px); /* Altezza viewport meno footer */
+    min-height: calc(60vh - 80px); /* Altezza viewport meno footer */
 }
 
 .login-container {
