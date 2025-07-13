@@ -65,7 +65,7 @@ body {
     align-items: center;
     justify-content: center;
     padding: 20px;
-    min-height: 100vh;
+    min-height: calc(100vh - 80px);
 }
 
 .login-container {
@@ -307,7 +307,7 @@ body {
         align-items: flex-start;
         justify-content: flex-start;
         padding-top: 20px;
-        min-height: 100vh;
+        min-height: calc(100vh - 80px);
     }
     
     .login-container {
@@ -337,7 +337,7 @@ body {
         padding-top: 20px;
         padding-left: 8px;
         padding-right: 8px;
-        min-height: 100vh;
+        min-height: calc(100vh - 80px);
         box-sizing: border-box;
         overflow-y: auto;
         justify-content: flex-start;
@@ -381,7 +381,7 @@ body {
     }
     
     .container {
-        min-height: 100vh;
+        min-height: calc(100vh - 80px);
         overflow-y: auto;
         padding: 20px 12px;
         justify-content: flex-start;
