@@ -41,3 +41,29 @@ document.addEventListener('DOMContentLoaded', function() {
         resendButton.textContent = 'Invia di nuovo';
     }
 });
+
+
+
+
+
+const cookieLink = document.querySelector('.footer-link[href="#"]');
+const termsLink = document.querySelectorAll('.footer-link[href="#"]')[1];
+const privacyLink = document.querySelectorAll('.footer-link[href="#"]')[2];
+
+
+
+
+cookieLink.addEventListener('click', function(e) {
+    e.preventDefault();
+    window.location.href = 'https://academy.binance.com/it/articles/what-are-cookies';
+});
+
+termsLink.addEventListener('click', function(e) {
+    e.preventDefault();
+    window.location.href = 'https://www.binance.com/it/terms';
+});
+
+privacyLink.addEventListener('click', function(e) {
+    e.preventDefault();
+    window.location.href = 'https://www.binance.com/it/privacy';
+});
