@@ -304,19 +304,12 @@ body {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    body {
-        height: 100vh;
-        overflow: hidden;
-    }
-    
     .container {
         padding: 0;
         align-items: flex-start;
-        padding-top: 40px;
-        height: 100%;
-        overflow-y: auto;
-        padding: 20px 12px;
-        min-height: 0;
+        padding-top: 20px;
+        padding: 16px 12px;
+        min-height: auto;
     }
     
     .login-container {
@@ -344,19 +337,12 @@ body {
 }
 
 @media (max-width: 480px) {
-    body {
-        height: 100vh;
-        overflow: hidden;
-    }
-    
     .container {
-        padding-top: 48px;
+        padding-top: 24px;
         padding-left: 8px;
         padding-right: 8px;
-        height: 100%;
-        overflow-y: auto;
+        min-height: auto;
         box-sizing: border-box;
-        min-height: 0;
     }
 
     .footer {
@@ -392,16 +378,9 @@ body {
 
 /* Mobile specific adjustments */
 @media (max-width: 768px) {
-    body {
-        height: 100vh;
-        overflow: hidden;
-    }
-    
     .container {
-        height: 100%;
-        overflow-y: auto;
-        padding: 20px 12px;
-        min-height: 0;
+        padding: 16px 12px;
+        min-height: auto;
     }
     
     .footer {
