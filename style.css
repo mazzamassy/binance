@@ -57,6 +57,7 @@ body {
     min-height: 100vh;
     margin: 0;
     padding: 0;
+    padding-bottom: 80px;
 }
 
 .container {
@@ -64,7 +65,7 @@ body {
     align-items: center;
     justify-content: center;
     padding: 20px;
-    min-height: calc(100vh - 80px);
+    min-height: 100vh;
 }
 
 .login-container {
@@ -251,8 +252,11 @@ body {
 }
 
 .footer {
-    position: static;
-    z-index: auto;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
     padding: 24px 20px;
     background-color: #181A20;
     margin-top: 0;
@@ -303,7 +307,7 @@ body {
         align-items: flex-start;
         justify-content: flex-start;
         padding-top: 20px;
-        min-height: calc(100vh - 80px);
+        min-height: 100vh;
     }
     
     .login-container {
@@ -333,7 +337,7 @@ body {
         padding-top: 20px;
         padding-left: 8px;
         padding-right: 8px;
-        min-height: calc(100vh - 80px);
+        min-height: 100vh;
         box-sizing: border-box;
         overflow-y: auto;
         justify-content: flex-start;
@@ -373,10 +377,11 @@ body {
     body {
         min-height: 100vh;
         overflow-y: auto;
+        padding-bottom: 80px;
     }
     
     .container {
-        min-height: calc(100vh - 80px);
+        min-height: 100vh;
         overflow-y: auto;
         padding: 20px 12px;
         justify-content: flex-start;
@@ -384,7 +389,10 @@ body {
     }
     
     .footer {
-        position: static;
-        z-index: auto;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 1000;
     }
 }
