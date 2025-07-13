@@ -1,0 +1,16 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Contorno a scudo grigio scuro -->
+  <path d="M20 0 H180 V140 L100 200 L20 140 Z" fill="#2D2F36"></path>
+
+  <!-- Telefono (spostato più in alto) -->
+  <rect x="65" y="30" width="70" height="110" fill="#1D1F23"></rect>
+  <rect x="65" y="30" width="70" height="8" fill="#5C5F66"></rect>
+  <rect x="65" y="132" width="70" height="8" fill="#5C5F66"></rect>
+
+  <!-- Fumetto giallo più quadrato e più in alto -->
+  <path d="M125 45H90V85H110V105L135 85H160V45H125Z" fill="#F4BA16"></path>
+
+  <!-- Linee nere equamente distribuite -->
+  <rect x="100" y="55" width="50" height="7" fill="#1D1F23"></rect>
+  <rect x="100" y="70" width="50" height="7" fill="#1D1F23"></rect>
+</svg>
