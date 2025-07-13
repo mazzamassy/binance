@@ -62,13 +62,12 @@ body {
 }
 
 .container {
-    flex: 1;
+    flex: 1 0 auto;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
     padding: 20px;
-    overflow-y: auto;
-    min-height: 0;
+    min-height: calc(100vh - 80px); /* Altezza viewport meno footer */
 }
 
 .login-container {
@@ -306,9 +305,7 @@ body {
     .container {
         padding: 0;
         align-items: flex-start;
-        padding-top: 20px;
-        padding: 16px 12px;
-        min-height: auto;
+        padding-top: 40px;
     }
     
     .login-container {
@@ -318,7 +315,6 @@ body {
         padding: 0 24px;
         max-width: none;
         min-height: auto;
-        flex-shrink: 0;
     }
     
     .footer-links {
@@ -331,28 +327,26 @@ body {
         z-index: auto;
         margin-top: 0;
         margin-bottom: 0;
-        flex-shrink: 0;
     }
 }
 
 @media (max-width: 480px) {
     .container {
-        padding-top: 24px;
+        padding-top: 48px;
         padding-left: 8px;
         padding-right: 8px;
-        min-height: auto;
+        min-height: calc(100vh - 80px);
         box-sizing: border-box;
+        overflow-y: auto;
     }
 
     .footer {
-        position: static;
-        margin-bottom: 0 !important;
-        flex-shrink: 0;
+        position: fixed;
+        margin-bottom: 50px !important;
     }
     
     .login-container {
         padding: 0 16px;
-        flex-shrink: 0;
     }
     
     .logo-text {
@@ -377,14 +371,19 @@ body {
 
 /* Mobile specific adjustments */
 @media (max-width: 768px) {
+    body {
+        min-height: 100vh;
+        overflow-y: auto;
+    }
+    
     .container {
-        padding: 16px 12px;
-        min-height: auto;
+        height: calc(100vh - 80px);
+        overflow-y: auto;
+        padding: 20px 12px;
     }
     
     .footer {
         position: static;
         z-index: auto;
-        flex-shrink: 0;
     }
 }
